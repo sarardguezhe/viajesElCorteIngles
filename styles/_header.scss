@@ -1,0 +1,76 @@
+
+.header{
+    background-color: $color-base;
+
+    &-ppal{
+        @include displayFlex (flex, space-between, center);
+        margin-inline: 10rem;
+        padding-block: 0.5rem;
+    }
+
+    .top-menu{
+        @include displayFlex (flex, space-around, center);
+        list-style: none;
+        gap: 8px;
+        font-size: 14px;
+
+        li{
+            @include displayFlex (flex, normal, center);
+            gap: 4px;
+
+            a{
+                @include linkStyle(none, $color-content, pointer);
+            }
+            a:hover{
+                color: $color-ligthgreen;
+            }
+        }
+
+        &-tlf{
+            font-size: 20px;
+        }
+    }
+
+    &-nav{
+        background-color: white;
+        text-transform: uppercase;
+        }
+
+    .menu-ppal{
+        
+        @include displayFlex (flex, space-between, center);
+        list-style: none;
+        gap: 8px;
+        margin-inline: 10rem;
+        font-size: 14px;
+        
+        a{
+            @include linkStyle(none, $color-content, pointer);
+            padding-bottom: 15px;
+        }
+
+        a:hover{
+            font-weight: bold;
+            border-bottom: 4px solid $color-ligthgreen;
+        }
+
+        .burger{
+            background-color: $color-ligthgreen;
+            padding:5px 10px 0px;
+            border-bottom: 4px solid $color-ligthgreen;
+    
+            &-a{
+                @include linkStyle(none, white, pointer);
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.separator{
+    border-right: 1px solid $color-content;
+    padding-right: 8px;
+}
+
+
+

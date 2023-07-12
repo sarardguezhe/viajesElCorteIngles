@@ -1,0 +1,78 @@
+.main{
+    background-color: $color-base;   
+}
+
+.options{
+    margin-inline: 10rem;
+    padding-block: 25px;
+
+    &-route{
+        @include displayFlex(flex, left, center);
+        list-style: none;
+        color: $color-content;
+        font-size: 14px;
+        gap: 5px;
+        padding-bottom: 10px;
+    }
+
+    &-filters{
+        @include displayFlex(flex, left, center);
+        list-style: none;
+        color: white;
+        gap: 25px;
+
+        li{
+            background-color: $color-ligthgreen;
+            padding: 10px 20px;
+        }
+    }
+}
+
+.destination{
+    margin-inline: 10rem;
+    padding-block: 10px;
+    @include displayFlex(flex, space-around, center);
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &-card{
+        width: 587px;
+        height: 445px;
+        background-color: white;
+    }
+
+    .card-text{
+            padding: 20px;
+            color: $color-content;
+
+            p{
+                margin-top: 10px;
+            }
+    }
+
+    .card-price{
+        @include displayFlex(flex, space-between, center);
+        padding: 0px 20px 20px;
+        margin-top: 20px;
+
+        p {
+            font-size: 14px;
+            color: $color-content;
+        }
+
+        .price-number{
+            font-size: 32px;
+            color: $color-darkgreen;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+    }
+
+    .card-button{
+        cursor: pointer;
+        @include buttonStyle(1px solid $color-content, 0, white, $color-darkgreen);
+        justify-items: center;
+        padding: 10px;
+    }
+}
+
