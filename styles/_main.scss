@@ -76,3 +76,19 @@
     }
 }
 
+.promo{
+    margin-inline: 10rem;
+    padding: 40px 0px 70px;
+
+    &-text{
+        background-color: white;
+        color: $color-content;
+        padding: 15px;
+
+        p{
+            font-size: 14px;
+            margin-top: 12px;
+        }
+    }
+
+}

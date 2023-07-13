@@ -156,4 +156,40 @@
   color: #658c46;
   justify-items: center;
   padding: 10px;
+}
+
+.promo {
+  margin-inline: 10rem;
+  padding: 40px 0px 70px;
+}
+.promo-text {
+  background-color: white;
+  color: #777777;
+  padding: 15px;
+}
+.promo-text p {
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.footer-options {
+  background-color: #efefef;
+  border-top: 1px solid lightgrey;
+}
+
+.options-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-inline: 10rem;
+  list-style: none;
+  font-size: 14px;
+  color: #777777;
+  font-weight: 600;
+  gap: 2px;
+}
+.options-list li {
+  text-align: center;
+  margin-block: 20px;
 }/*# sourceMappingURL=style.css.map */
